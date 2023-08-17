@@ -1,0 +1,73 @@
+#about{
+    &-a{
+        .info{
+            display: flex;
+            gap: 1rem;
+
+            &__image{
+                border: 1px solid $light-color;
+                width: 400px;
+                height: 200px;
+                flex: 2;
+                padding: .5rem;
+                border-radius: 4px;
+            }
+            &__bio{
+                flex: 3;
+                padding: .8rem;
+                border: 1px solid $light-color;
+            }
+        }
+    }
+    &-b{
+        color: #fff;
+        #prograss-bars{
+            padding: .5rem;
+            margin-bottom: 1rem;
+        }
+        .progress{
+            height: 20px;
+            background-color: $medium-color;
+            border-radius: 5px;
+            margin-bottom: .8rem;
+            div{
+                height: 100%;
+                text-align: center;
+                background-color: $primary-color;
+            }
+        }
+    }
+    &-c{
+        
+        .about-logos{
+            display: flex;
+            justify-content: space-evenly;
+            img{
+                width: 200px;
+                height: 200px;
+                border-radius: 5px;
+            }
+        }
+    }
+    &-d{
+        .referencess{
+            ul{
+                list-style: none;
+                margin-top: 1rem;
+                display: flex;
+                align-items: center;
+            }
+            p{
+                border: 1px solid $medium-color;
+                border-radius: 5px;
+                padding: .5rem;
+            }
+            img{
+                width: 50px;
+                height: 50px;
+                border-radius: 50%;
+                padding-right: .5rem;
+            }
+        }
+    }
+}

@@ -1,0 +1,28 @@
+#contact {
+    &-a {
+        .form-fields {
+            display: grid;
+            grid-template-areas: 
+            'name email' 
+            'subject phone' 
+            'message message' 
+            'button button';
+            gap: 10px; /* İstenilen aralık değeri */
+
+            input{
+                height: 40px;
+                padding: 5px;
+            }
+        }
+        .message {
+            grid-area: message;
+            height:200px;
+            padding: 5px;
+            appearance: none;
+            resize: none;
+        }
+        .btn-dark {
+            grid-area: button; /* Butonun ilgili bölgeye yerleştirilmesi */
+        }
+    }
+}

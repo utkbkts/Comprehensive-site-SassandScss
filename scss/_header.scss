@@ -1,0 +1,59 @@
+// main-nav
+.main-nav{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 1rem;
+    &__logo{
+        width: 70px;
+        height: 70px;
+        border-radius: 100%;
+    }
+    &__items{
+        display: flex;
+        
+        li{
+            padding: 1rem 1.5rem;
+
+            a{
+                text-decoration: none;
+                color: #fff;
+                text-transform: uppercase;
+                border-bottom: 3px transparent solid;
+                padding: .5rem;
+                transition: border-color .5s;
+
+                &:hover{
+                    border-color: $medium-color;
+                }
+                &.active{
+                    border-color: $primary-color;
+                }
+            }
+        }
+    }
+}
+#header{
+    &__home{
+        background: url("https://images.pexels.com/photos/952670/pexels-photo-952670.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1") no-repeat center right/cover fixed;
+        height: 100vh;
+        color: #fff;
+        
+        .header-content{
+            text-align: center;
+           margin-top: 20%;
+        
+        }
+        h1{
+            font-size: 4rem;
+            line-height: 1.2;
+        }
+        .typewrite{
+            display: block;
+        }
+    }
+    &__inner{
+        background: $dark-color;
+        height: 7rem;
+        border-bottom: 3px solid $primary-color;
+    }
+}
